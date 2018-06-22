@@ -54,9 +54,19 @@ Removing intermediate container 0f651ad6b054
  ---> 08eba62d26fd
 Successfully built 08eba62d26fd
 Successfully tagged jcberthon/level3:latest
+$ docker run --rm jcberthon/level3:latest
+ _____________
+< Hello World >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
 
 $ docker system prune -a
-$ docker build -t jcberthon/level3:latest .                                                                                                                                                            1843ms  Fri 22 Jun 2018 16:15:07 CEST
+$ docker build -t jcberthon/level3:latest .
 Sending build context to Docker daemon  2.048kB
 Step 1/6 : FROM jcberthon/baseline:latest as baseline
 latest: Pulling from jcberthon/baseline
