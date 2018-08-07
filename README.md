@@ -1,10 +1,14 @@
 # multistage-fails
 Docker multistage build fails example
 
+## How to reproduce
 You can run either type the command given below or simply run the provided script.
 If the cow is saying success you're not affected. To run the script:
 
     ./multistage-test.sh
+
+If you run the script a second time, it works. But if the build cache gets cleaned
+up (e.g. do `docker system prune -a`) then it fails again!
 
 Affected systems (at least):
  * Docker CE with devicemapper storage backend
@@ -13,6 +17,7 @@ Affected systems (at least):
 Systems were is work (at least)
  * Docker CE with overlay2 storage backend
 
+## Detailed steps to reproduce (alternative)
 ```
 $ cd baseline
 $ docker build -t jcberthon/baseline:latest .
