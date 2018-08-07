@@ -1,5 +1,5 @@
 # multistage-fails
-Docker multistage build fails example
+Docker multistage build fails example, see [Moby issue 37340](https://github.com/moby/moby/issues/37340).
 
 ## How to reproduce
 You can run either type the command given below or simply run the provided script.
