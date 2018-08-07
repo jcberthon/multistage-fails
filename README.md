@@ -1,6 +1,17 @@
 # multistage-fails
 Docker multistage build fails example
 
+You can run either type the command given below or simply run the provided script.
+If the cow is saying success you're not affected. To run the script:
+
+    ./multistage-test.sh
+
+Affected systems (at least):
+ * Docker CE with devicemapper storage backend
+ * Docker CE with btrfs storage backend
+
+Systems were is work (at least)
+ * Docker CE with overlay2 storage backend
 
 ```
 $ cd baseline
@@ -55,9 +66,9 @@ Removing intermediate container 0f651ad6b054
 Successfully built 08eba62d26fd
 Successfully tagged jcberthon/level3:latest
 $ docker run --rm jcberthon/level3:latest
- _____________
-< Hello World >
- -------------
+ __________________________
+< Multistage build success >
+ --------------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
